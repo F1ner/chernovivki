@@ -1,0 +1,7 @@
+D:\ababiy\Ababiy16_3\obj\Debug\Ababiy16_3.csproj.AssemblyReference.cache
+D:\ababiy\Ababiy16_3\obj\Debug\Ababiy16_3.csproj.CoreCompileInputs.cache
+D:\ababiy\Ababiy16_3\bin\Debug\Ababiy16_3.exe.config
+D:\ababiy\Ababiy16_3\bin\Debug\Ababiy16_3.exe
+D:\ababiy\Ababiy16_3\bin\Debug\Ababiy16_3.pdb
+D:\ababiy\Ababiy16_3\obj\Debug\Ababiy16_3.exe
+D:\ababiy\Ababiy16_3\obj\Debug\Ababiy16_3.pdb
