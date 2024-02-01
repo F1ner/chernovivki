@@ -1,0 +1,7 @@
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\bin\Debug\16-4CHERNOVIK.exe.config
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\bin\Debug\16-4CHERNOVIK.exe
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\bin\Debug\16-4CHERNOVIK.pdb
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\obj\Debug\16-4CHERNOVIK.csproj.AssemblyReference.cache
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\obj\Debug\16-4CHERNOVIK.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\obj\Debug\16-4CHERNOVIK.exe
+C:\Users\Denis\Desktop\проекты Ильи оаип\16-4CHERNOVIK\obj\Debug\16-4CHERNOVIK.pdb
