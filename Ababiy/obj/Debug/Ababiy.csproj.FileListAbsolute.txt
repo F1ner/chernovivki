@@ -1,0 +1,7 @@
+D:\ababiy\Ababiy\bin\Debug\Ababiy.exe.config
+D:\ababiy\Ababiy\bin\Debug\Ababiy.exe
+D:\ababiy\Ababiy\bin\Debug\Ababiy.pdb
+D:\ababiy\Ababiy\obj\Debug\Ababiy.csproj.AssemblyReference.cache
+D:\ababiy\Ababiy\obj\Debug\Ababiy.csproj.CoreCompileInputs.cache
+D:\ababiy\Ababiy\obj\Debug\Ababiy.exe
+D:\ababiy\Ababiy\obj\Debug\Ababiy.pdb
