@@ -4,58 +4,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp18
+
+namespace Ababiy18_4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ///масив обьектов
-            List<Employee> employees = new List<Employee>()
+            // Создал список объектов класса Person
+            List<Person> people = new List<Person>
+        {
+          
+
+            // Добавил 1 студента
+            new Student("Петр", "Петров", new DateTime(1998, 2, 10), "Факультет", 2),
+
+            // Добавил 1 преподавателя
+            new Teacher("Алексей", "Алексеев", new DateTime(1965, 12, 25), "Факультет", "Преподаватель", 35),
+
+              // Добавил 1 сотрудника
+            new Employee("Сергей", "Сидоров", new DateTime(1970, 3, 20), "Факультет"),
+
+             // Добавил 2 студента
+            new Student("Евгений", "Иосиф", new DateTime(1999, 4, 11), "Факультет", 4),
+
+            // Добавил 2 преподавателя
+            new Teacher("Григорий", "Донцой", new DateTime(1978, 7, 26), "Факультет", "Преподаватель", 35),
+
+              // Добавил 2 сотрудника
+            new Employee("Илья", "Сидоров", new DateTime(1990, 1, 16), "Факультет"),
+        };
+
+            // Вывел информацию о всех людях в списке
+            foreach (var person in people)
             {
-             new Manager { FirstName = "", LastName = "", BirthDate = new DateTime(1980, 1, 1), MinSalary = 0, SalesVolume = 1 },
-             new Manager { FirstName = "Иван", LastName = "Петров", BirthDate = new DateTime(1980, 1, 1), MinSalary = 50, SalesVolume = 12 },
-             new Engineer { FirstName = "Мария", LastName = "Сидорова", BirthDate = new DateTime(1985, 5, 8), MinSalary = 40, ProjectsCount = 10 },
-             new Engineer { FirstName = "Максим", LastName = "Игнатенко", BirthDate = new DateTime(2007,4 ,20 ), MinSalary = 150, ProjectsCount = 10 },
-             new Engineer { FirstName = "Илья", LastName = "Абабий", BirthDate = new DateTime(2006,5 ,31 ), MinSalary =100 , ProjectsCount = 10 },
-             new Engineer { FirstName = "Максим", LastName = "Гулин", BirthDate = new DateTime(2007, 3,27 ), MinSalary =700 , ProjectsCount = 10 },
-            };
-            ///цикл для выдачи результатов
-            foreach (var employee in employees)
-            {
-                employee.PrintInfo();
-                Console.WriteLine($"Доход: {employee.GetIncome(1.2)}");
-                Console.WriteLine();
+                person.Display();
             }
-            // Суммарный доход
-            double totalSalary = 0;
-            // Максимальный доход менеджера
-            double maxManagerSalary = 0;
-            foreach (Employee employee in employees)
+
+            Console.WriteLine();
+
+            // Нашел людей, чей возраст попадает в заданный диапазон
+            var ageRange = Enumerable.Range(18, 31); // Диапазон возрастов от 18 до 30 лет включительно
+            var filteredPeople = people.Where(p => ageRange.Contains(p.Age));
+
+            Console.WriteLine("Возраст от 18 до 30 лет:");
+            foreach (var person in filteredPeople)
             {
-                // Вывод информации о сотруднике
-                employee.PrintInfo();
-                // Расчет дохода
-                double income = employee.GetIncome(1.2);
-                // Добавление дохода к суммарному
-                totalSalary += income;
-                // Проверка, является ли сотрудник менеджером
-                if (employee is Manager)
-                {
-                    // Сравнение дохода с максимальным
-                    if (income > maxManagerSalary)
-                    {
-                        maxManagerSalary = income;
-                    }
-                }
-                // Вывод дохода
-                Console.WriteLine($"Доход: {income:F2}");
-                Console.WriteLine();
+                person.Display();
             }
-            // Вывод суммарного дохода
-            Console.WriteLine($"Суммарный доход: {totalSalary:F2}");
-            // Вывод максимального дохода менеджера
-            Console.WriteLine($"Максимальный доход менеджера: {maxManagerSalary:F2}");
+
             Console.ReadKey();
         }
     }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{895ABEE0-F979-4DC9-AB8A-202103212AB3}</ProjectGuid>
+    <ProjectGuid>{E2F3B973-095D-416B-8884-375901525858}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp18</RootNamespace>
     <AssemblyName>ConsoleApp18</AssemblyName>
@@ -44,10 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
-    <Compile Include="Engineer.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
